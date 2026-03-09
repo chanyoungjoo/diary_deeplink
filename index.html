@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <title>비밀번호 재설정</title>
+  </head>
+  <body>
+    <script>
+      // URL에서 파라미터 추출
+      const params = new URLSearchParams(window.location.search);
+      const mode = params.get('mode');
+      const oobCode = params.get('oobCode');
+
+      // 비밀번호 재설정 모드일 때만 앱으로 이동해야 함
+      if (mode === 'resetPassword' && oobCode){
+        window.location.href = 'diaryapp://reset-password?oobCode=' + oobCode;
+      }
+    </script>
+    <p>앱으로 이동 중 . . .</p>
+  </body>
+</html>
