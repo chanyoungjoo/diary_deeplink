@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.diaryapplication",
+    "sha256_cert_fingerprints": [
+    "6D:B5:91:CE:55:A7:D4:95:2D:73:F3:81:93:54:E9:76:F8:D5:29:28:47:81:E1:7E:1C:9F:3D:C2:88:8F:DF:89"
+    ]
+  }
+}]
